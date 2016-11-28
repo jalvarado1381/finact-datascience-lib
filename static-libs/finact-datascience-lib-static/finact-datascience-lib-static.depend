@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1480192834 source:/home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.cpp
+
+1480194106 source:/home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/main.cpp
+	"date.h"
+
+1480195651 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+	<iostream>
+	<string>
+	<sstream>
+
