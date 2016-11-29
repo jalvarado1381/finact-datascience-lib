@@ -3,5 +3,7 @@
 	<Workspace title="Workspace">
 		<Project filename="static-libs/finact-datascience-lib-static/finact-datascience-lib-static.cbp" />
 		<Project filename="../../../../../Users/Juan Alvarado Perez/projects/PreviewClasses/PreviewClasses.cbp" />
+		<Project filename="shared-libs/finact-datascience-lib-shared/finact-datascience-lib-shared.cbp" />
+		<Project filename="finact-UnitTest/finact-UnitTest.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

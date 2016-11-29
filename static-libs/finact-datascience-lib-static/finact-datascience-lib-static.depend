@@ -12,13 +12,13 @@
 1480339425 source:c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\main.cpp
 	"date.h"
 
-1480360316 c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\date.h
+1480448827 c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\date.h
 	<iostream>
 	<string>
 	<sstream>
 	<list>
 
-1480360591 source:c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\date.cpp
+1480442318 source:c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\date.cpp
 	"date.h"
 	<string>
 
