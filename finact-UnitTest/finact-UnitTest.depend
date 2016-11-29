@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1480435553 source:c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\finact-unittest\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+	<date.h>
+
+1480431592 c:\cygwin64\home\juan alvarado perez\projects\finact-datascience-lib\static-libs\finact-datascience-lib-static\date.h
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+
