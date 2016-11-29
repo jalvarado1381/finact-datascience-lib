@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="static-libs/finact-datascience-lib-static/finact-datascience-lib-static.cbp" />
+		<Project filename="shared-libs/finact-datascience-lib-shared/finact-datascience-lib-shared.cbp" />
+		<Project filename="finact-UnitTest/finact-UnitTest/finact-UnitTest.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
