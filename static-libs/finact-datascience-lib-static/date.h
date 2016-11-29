@@ -4,11 +4,19 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <list>
 
 using namespace std;
 
 class Date {
     private:
+        list<int> monthDaysRanges = {28,29,30,31};
+        list<int> yearDayRanges = {360, 365, 366};
+        const int yearMonths = 12;
+        list<string> monthsNamesEN = {"January","February","March","April","May","June",
+        "July","August","September","October","November","December"};
+        list<string> monthsNamesES = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
+        "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
         int day, month, year;
         bool validateDay(int);
         bool validateMonth(int);
@@ -31,6 +39,7 @@ class Date {
         }*/
         void setDate(int d, int m, int y);
         string getDate();
+        list<string> getMonths( string );
 };
 
 #endif // DATE_H_INCLUDED

@@ -15,7 +15,6 @@
 				<Option createDefFile="1" />
 				<Compiler>
 					<Add option="-Wall" />
-					<Add option="-g" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -34,6 +33,8 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="date.cpp" />
+		<Unit filename="date.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
