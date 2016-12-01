@@ -2,30 +2,29 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="finact-datascience-lib-static" />
+		<Option title="finact-UnitTest" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/finact-datascience-lib-static" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="" />
+				<Option output="bin/Debug/finact-UnitTest" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="2" />
+				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../static-libs/finact-datascience-lib-static" />
 				</Compiler>
+				<Linker>
+					<Add library="../static-libs/finact-datascience-lib-static/bin/Debug/libfinact-datascience-lib-static.a" />
+				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/finact-datascience-lib-static" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="" />
+				<Option output="bin/Release/finact-UnitTest" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="2" />
+				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-O2" />
 				</Compiler>
 				<Linker>
@@ -33,8 +32,10 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="date.cpp" />
-		<Unit filename="date.h" />
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

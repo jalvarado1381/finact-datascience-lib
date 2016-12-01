@@ -31,12 +31,3 @@ int SampleFunction2()
 
     return 0;
 }
-
-int main(){
-    Date d;
-    Date d1 = Date(13, 12, 1981);
-    d.getDate();
-    d1.getDate();
-
-    return 0;
-}
