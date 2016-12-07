@@ -5,6 +5,9 @@
 #include <string>
 #include <sstream>
 #include <list>
+#include <vector>
+#include <map>
+#include <iterator>
 
 using namespace std;
 
@@ -13,13 +16,20 @@ class Date {
         list<int> monthDaysRanges = {28,29,30,31};
         list<int> yearDayRanges = {360, 365, 366};
         const int monthsPerYear = 12;
-        list<string> monthsNumber;
-        list<string> monthsNamesEN ;
-        list<string> monthsNamesES ;
-        std::list<list<string>> monthsList;
+
+        std::map  < int, list<string>, less< int > > months;
+        std::map  < int, string, less< int > > ES_Months;
+
+        list<string>  monthsNumber = {"1","2","3","4","5","6","7","8","9","10","11","12"};
+        list<string>  monthsNamesEN= {"January","February","March","April","May","June",
+            "July","August","September","October","November","December"};
+        list<string>  monthsNamesES = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
+            "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
 
         int day, month, year;
 
+        void initializeDate();
+        void initializeMonths();
         bool validateDay(int);
         bool validateMonth(int);
         bool validateYear(int);
@@ -27,6 +37,7 @@ class Date {
     public:
         Date();
         Date( int d, int m, int y);
+
         void setDay( int d );
         void setMonth( int m );
         void setYear( int y );

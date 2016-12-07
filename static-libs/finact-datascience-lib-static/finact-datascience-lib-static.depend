@@ -22,3 +22,19 @@
 	"date.h"
 	<string>
 
+1481120661 source:/home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.cpp
+	"date.h"
+	<string>
+
+1481125104 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+	<vector>
+	<map>
+	<iterator>
+
+1480568399 source:/home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/main.cpp
+	"date.h"
+

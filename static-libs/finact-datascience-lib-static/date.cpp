@@ -3,7 +3,8 @@
 
 
         Date::Date(){
-            setDay(1), setMonth(1), setYear(1);
+            /*list<int> monthDaysRanges = {28,29,30,31};
+            list<int> yearDayRanges = {360, 365, 366};
             monthsNumber = {"1","2","3","4","5","6","7","8","9","10","11","12"};
             monthsNamesEN = {"January","February","March","April","May","June",
             "July","August","September","October","November","December"};
@@ -11,10 +12,54 @@
             "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
             monthsList.push_back(monthsNumber);
             monthsList.push_back(monthsNamesEN);
-            monthsList.push_back(monthsNamesES);
+            monthsList.push_back(monthsNamesES);*/
+            initializeMonths();
+            initializeDate();
+            setDay(1), setMonth(1), setYear(1);
         }
+
         Date::Date( int d, int m, int y){
+            initializeDate();
             setDay(d), setMonth(m), setYear(y);
+        }
+
+        void Date::initializeDate(){
+            string  monthsNumber[] = {"1","2","3","4","5","6","7","8","9","10","11","12"};
+            string monthsNamesEN[] = {"January","February","March","April","May","June",
+            "July","August","September","October","November","December"};
+            string monthsNamesES[] = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
+            "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+            /*for (int i = 0; i < 12; ++i){
+                Date::months.insert(make_pair(monthsNamesEN[i], monthsNamesES[i]));
+            }*/
+        }
+        void Date::initializeMonths(){
+            std::list< list<string> > monthsList = {
+                {"1","January","Jan","Enero"},
+                {"2","February","Feb","Febrero"},
+                {"3","March","Mar","Marzo"},
+                {"4","January","Jan","Abril"},
+                {"5","January","Jan","Mayo"},
+                {"6","January","Jan","Junio"},
+                {"7","January","Jan","Julio"},
+                {"8","January","Jan","Agosto"},
+                {"9","January","Jan","Septiembre"},
+                {"10","January","Jan","Octubre"},
+                {"11","January","Jan","Enero"},
+                {"12","January","Jan","Enero"}
+            };
+            int n = 1;
+
+            for (auto i = monthsNamesES.cbegin(); i != monthsNamesES.cend(); ++i){
+                Date::ES_Months.insert(make_pair(n, *i));
+                cout << *i << endl;
+                ++n;
+            };
+            for (auto i = monthsList.cbegin(); i != monthsList.cend(); ++i){
+                Date::months.insert(make_pair(n, *i));
+                //cout << *i << endl;
+                ++n;
+            };
         }
         void Date::setDay( int d ){
             if ( validateDay(d) ){
@@ -37,6 +82,7 @@
             setMonth(m);
             setYear(y);
         }
+
         bool Date::validateDay(int d ){
             //monthDaysRanges.
             bool value = false;
@@ -51,7 +97,9 @@
                 }
             return value;
         }
+
         bool Date::validateMonth(int m ){}
+
         bool Date::validateYear(int y){}
 
         int Date::getDay(){

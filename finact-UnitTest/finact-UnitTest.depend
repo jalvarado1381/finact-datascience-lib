@@ -12,3 +12,19 @@
 	<sstream>
 	<list>
 
+1480568399 source:/home/jalvarado/proyectos/finact-datascience-lib/finact-UnitTest/main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+	<date.h>
+
+1481125104 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+	<vector>
+	<map>
+	<iterator>
+
