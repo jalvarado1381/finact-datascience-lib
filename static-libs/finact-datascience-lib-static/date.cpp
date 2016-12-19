@@ -38,15 +38,15 @@
                 {"1","January","Jan","Enero"},
                 {"2","February","Feb","Febrero"},
                 {"3","March","Mar","Marzo"},
-                {"4","January","Jan","Abril"},
-                {"5","January","Jan","Mayo"},
-                {"6","January","Jan","Junio"},
-                {"7","January","Jan","Julio"},
-                {"8","January","Jan","Agosto"},
-                {"9","January","Jan","Septiembre"},
-                {"10","January","Jan","Octubre"},
-                {"11","January","Jan","Enero"},
-                {"12","January","Jan","Enero"}
+                {"4","April","Apr","Abril"},
+                {"5","May","May","Mayo"},
+                {"6","June","Jun","Junio"},
+                {"7","July","Jul","Julio"},
+                {"8","August","Aug","Agosto"},
+                {"9","September","Sep","Septiembre"},
+                {"10","October","Oct","Octubre"},
+                {"11","November","Nov","Noviembre"},
+                {"12","December","Dec","Diciembre"}
             };
             int n = 1;
 
@@ -55,6 +55,7 @@
                 cout << *i << endl;
                 ++n;
             };
+            n = 1;
             for (auto i = monthsList.cbegin(); i != monthsList.cend(); ++i){
                 Date::months.insert(make_pair(n, *i));
                 //cout << *i << endl;

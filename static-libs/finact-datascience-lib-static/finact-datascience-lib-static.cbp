@@ -36,7 +36,11 @@
 		</Build>
 		<Unit filename="date.cpp" />
 		<Unit filename="date.h" />
+		<Unit filename="day.cpp" />
+		<Unit filename="day.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="month.cpp" />
+		<Unit filename="month.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

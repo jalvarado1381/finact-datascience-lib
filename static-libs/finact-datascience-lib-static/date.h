@@ -9,6 +9,9 @@
 #include <map>
 #include <iterator>
 
+#include "day.h"
+#include "month.h"
+
 using namespace std;
 
 class Date {
@@ -25,6 +28,9 @@ class Date {
             "July","August","September","October","November","December"};
         list<string>  monthsNamesES = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
             "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+
+//        Day d;
+  //      Month m;
 
         int day, month, year;
 

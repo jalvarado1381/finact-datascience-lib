@@ -12,14 +12,15 @@
 	<sstream>
 	<list>
 
-1480568399 source:/home/jalvarado/proyectos/finact-datascience-lib/finact-UnitTest/main.cpp
+1481942785 source:/home/jalvarado/proyectos/finact-datascience-lib/finact-UnitTest/main.cpp
 	<iostream>
 	<string>
 	<sstream>
 	<list>
 	<date.h>
+	<day.h>
 
-1481125104 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+1481491214 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
 	<iostream>
 	<string>
 	<sstream>
@@ -27,4 +28,20 @@
 	<vector>
 	<map>
 	<iterator>
+	"day.h"
+	"month.h"
+
+1481851805 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/day.h
+	<iostream>
+	<string>
+	<sstream>
+	<list>
+	<vector>
+	<map>
+	<iterator>
+
+1481851354 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/month.h
+	<iostream>
+	<string>
+	<list>
 
