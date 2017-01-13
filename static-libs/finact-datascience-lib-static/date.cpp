@@ -25,36 +25,30 @@
 
         void Date::initializeDate(){
             string  monthsNumber[] = {"1","2","3","4","5","6","7","8","9","10","11","12"};
-            string monthsNamesEN[] = {"January","February","March","April","May","June",
-            "July","August","September","October","November","December"};
-            string monthsNamesES[] = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
-            "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+            string monthsNames[] = {"January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"};
             /*for (int i = 0; i < 12; ++i){
                 Date::months.insert(make_pair(monthsNamesEN[i], monthsNamesES[i]));
             }*/
         }
         void Date::initializeMonths(){
             std::list< list<string> > monthsList = {
-                {"1","January","Jan","Enero"},
-                {"2","February","Feb","Febrero"},
-                {"3","March","Mar","Marzo"},
-                {"4","April","Apr","Abril"},
-                {"5","May","May","Mayo"},
-                {"6","June","Jun","Junio"},
-                {"7","July","Jul","Julio"},
-                {"8","August","Aug","Agosto"},
-                {"9","September","Sep","Septiembre"},
-                {"10","October","Oct","Octubre"},
-                {"11","November","Nov","Noviembre"},
-                {"12","December","Dec","Diciembre"}
+                {"1", "January", "Jan"},
+                {"2", "February", "Feb"},
+                {"3", "March", "Mar"},
+                {"4", "April", "Apr"},
+                {"5", "May", "May"},
+                {"6", "June", "Jun"},
+                {"7", "July", "Jul"},
+                {"8", "August", "Aug"},
+                {"9", "September", "Sep"},
+                {"10", "October", "Oct"},
+                {"11", "November", "Nov"},
+                {"12", "December", "Dec"}
             };
+
             int n = 1;
 
-            for (auto i = monthsNamesES.cbegin(); i != monthsNamesES.cend(); ++i){
-                Date::ES_Months.insert(make_pair(n, *i));
-                cout << *i << endl;
-                ++n;
-            };
             n = 1;
             for (auto i = monthsList.cbegin(); i != monthsList.cend(); ++i){
                 Date::months.insert(make_pair(n, *i));

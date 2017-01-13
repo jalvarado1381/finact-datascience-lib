@@ -21,18 +21,27 @@ class Date {
         const int monthsPerYear = 12;
 
         std::map  < int, list<string>, less< int > > months;
-        std::map  < int, string, less< int > > ES_Months;
 
         list<string>  monthsNumber = {"1","2","3","4","5","6","7","8","9","10","11","12"};
-        list<string>  monthsNamesEN= {"January","February","March","April","May","June",
+        list<string>  monthsNames= {"January","February","March","April","May","June",
             "July","August","September","October","November","December"};
-        list<string>  monthsNamesES = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
-            "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+
+        std::vector< list<string> > dayNames = {
+            {"1","Monday"},
+            {"2","Tuesday"},
+            {"3","Wednesday"},
+            {"4","Thursday"},
+            {"5","Friday"},
+            {"6","Saturday"},
+            {"7","Sunday"}
+        };
 
 //        Day d;
   //      Month m;
 
-        int day, month, year;
+        Day day;
+        Month month;
+        int year;
 
         void initializeDate();
         void initializeMonths();
