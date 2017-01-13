@@ -13,9 +13,13 @@ int main()
 {
     Date d;
     cout << d.getDate() << endl;
+<<<<<<< HEAD
     Date d1 = Date(14,12,1981);
     for ( auto i : d1.getMonths("ES"))
         cout << i + " ";
+=======
+    Date d1 = Date(13,12,1981);
+>>>>>>> 10ae9f1581aacda319234e3307fa83c33d2363ca
     cout << endl;
     for ( auto i : d1.getMonths("EN") )
         cout << i + " ";

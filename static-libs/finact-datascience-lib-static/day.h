@@ -14,20 +14,9 @@
 using namespace std;
 
 class Day{
-private:
-    std::vector< list<string> > dayNames = {
-            {"1","Monday","Lunes"},
-            {"2","Tuesday","Martes"},
-            {"3","Wednesday","Miercoles"},
-            {"4","Thursday","Jueves"},
-            {"5","Friday","Viernes"},
-            {"6","Saturday","Sabado"},
-            {"7","Sunday","Domingo"}
-    };
 
-    int weekDayNum;
-    string weekDayName;
-    int monthDay; //day of the month 1-31
+private:
+    int day; //day of the month 1-31
 
 public:
     Day();

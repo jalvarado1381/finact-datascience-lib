@@ -10,17 +10,16 @@ Day::Day( int d ){
 }
 
 void Day::setDay(){
-    monthDay = 1;
+    day = 1;
 }
 
-void Day::setDay( string d ){
-    cout << d << endl;
-    int d1 = 0;
-    if (d1 > 0 && d1 < 31 ){
-        monthDay = d1;
+void Day::setDay( int d ){
+    int d = 0;
+    if (d >= 1 && d <= 31 ){
+        day = d;
     }
     else{
-        cerr << "Invalid day number:" << " "<< d  << "\n"
+        cerr << "Invalid day number:" << " " << d  << "\n"
              <<"The day should have a value between 1 and 31.";
     }
 }

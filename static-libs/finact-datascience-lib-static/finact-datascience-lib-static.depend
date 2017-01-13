@@ -26,7 +26,11 @@
 	"date.h"
 	<string>
 
+<<<<<<< HEAD
 1484276107 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+=======
+1482877214 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/date.h
+>>>>>>> 10ae9f1581aacda319234e3307fa83c33d2363ca
 	<iostream>
 	<string>
 	<sstream>
@@ -40,7 +44,11 @@
 1484276107 source:/home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/main.cpp
 	"date.h"
 
+<<<<<<< HEAD
 1484276107 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/day.h
+=======
+1484073060 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/day.h
+>>>>>>> 10ae9f1581aacda319234e3307fa83c33d2363ca
 	<iostream>
 	<string>
 	<sstream>
@@ -49,7 +57,11 @@
 	<map>
 	<iterator>
 
+<<<<<<< HEAD
 1484276107 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/month.h
+=======
+1484073462 /home/jalvarado/proyectos/finact-datascience-lib/static-libs/finact-datascience-lib-static/month.h
+>>>>>>> 10ae9f1581aacda319234e3307fa83c33d2363ca
 	<iostream>
 	<string>
 	<list>
